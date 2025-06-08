@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors' //importa los paquetes cors-- permisos de acceso
 import path from 'path'
 import { fileURLToPath } from 'url'
-import registrosRoutes from './routes/registros.routes.js'
+import registrosRoutes from './routes/registro.routes.js'
 
 //definir modulo de ES
 const __filename = fileURLToPath(import.meta.url);
