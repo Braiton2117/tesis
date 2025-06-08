@@ -14,9 +14,9 @@ export const getRegistros=
 export const getregistrosxid=
 async (req,res)=>{
     try {
-        const[result]=await conmysql.query('select * from registros where id=?',[req.params.id])
+        const[result]=await conmysql.query('select * from mediciones where id=?',[req.params.id])
         if (result.length<=0)return res.status(404).json({
-            cli_id:0,
+            id:0,
             message:"Mediciones no encontrado"
         })
         res.json(result[0])
